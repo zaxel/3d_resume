@@ -20,7 +20,7 @@ export class ModalMarker{
         if(this.markersDistanceHandler.activeMarker && this.markersDistanceHandler.activeMarker!==this.activeMarker){
             this.activeMarker = this.markersDistanceHandler.activeMarker;
             this.modal.innerHTML = `
-                press <kbd>space</kbd> to read <strong> ${this.activeMarker.name}</strong>
+                press <kbd>R</kbd> to read <strong> ${this.activeMarker.name}</strong>
             `
             this.modal.classList.add('show-marker-modal');
         }

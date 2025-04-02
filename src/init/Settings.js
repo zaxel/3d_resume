@@ -29,8 +29,8 @@ export class Settings {
                 new this.Game(this.settings);
         })
         this._lowPCBtn.addEventListener("click", event=>{
-            event.target.classList.toggle("active");
-            if(event.target.classList.contains("active")){
+            event.target.classList.toggle("config-active");
+            if(event.target.classList.contains("config-active")){
                 this._setCheckBoxes(false);
             }else{
                 this._setCheckBoxes(true);

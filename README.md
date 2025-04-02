@@ -1,7 +1,7 @@
 ﻿# 3D Resume (JS, Three.js)
 
->A virtual 3D resume designed as an interactive game where a character explores a limited-size map. 
->By visiting different structures, users unlock various resume sections.
+A virtual 3D resume designed as an interactive game where a character explores a limited-size map. 
+By visiting different structures, users unlock various resume sections.
 
 *************************************************
 ### ***Key Features:***
@@ -32,11 +32,11 @@
 **movment**&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp; -&emsp; <code>**A**</code><code>**D**</code><code>**S**</code> &emsp;&emsp;or&emsp;&emsp; <code>**&#8592;**</code><code>**&#8595;**</code><code>**&#8594;**</code>\
 **run**&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;&nbsp; -&emsp;&nbsp;&nbsp;<code>**SHIFT**</code>\
 **jump**&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp; -&emsp;&nbsp;&nbsp;<code>**CTRF**</code>\
-**random action**&emsp;&emsp;&emsp;&emsp; -&emsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>**R**</code>\
+**random action**&emsp;&emsp;&emsp;&emsp; -&emsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>**F**</code>\
 **help**&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp; -&emsp;&ensp;&nbsp;&nbsp;<code>**H**</code>\
 **sounds**&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp; -&emsp;&ensp;&nbsp;&nbsp;&nbsp;<code>**N**</code>\
 **music**&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp; -&emsp;&ensp;&nbsp;&nbsp;<code>**M**</code>\
-**open/close chapter**&emsp;&nbsp;&nbsp; -&emsp;&nbsp;<code>**space**</code>
+**open/close chapter**&emsp;&nbsp;&nbsp;&nbsp; -&emsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>**R**</code>
 
 *************************************************
 ### ***CHECK IT OUT*** 

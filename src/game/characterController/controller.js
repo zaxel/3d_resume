@@ -28,6 +28,7 @@ class ButtonPressedController {
 			shift: false,
 			esc: false,
 			action: false,
+			read: false,
 
 			limitAreaReachedAct: false,
 			limitAreaTurn: false,
@@ -67,7 +68,7 @@ class ButtonPressedController {
 				this._keys.ctrl = true;
 				break;
 			case 82: // r
-				this._keys.action = true;
+				this._keys.read = true;
 				break;
 			case 16: // SHIFT
 				this._keys.shift = true;
@@ -76,7 +77,7 @@ class ButtonPressedController {
 				this._keys.thirdPersonCamera = true;
 				break;
 			case 70: // f
-				// this._keys.freeCamera = true;
+				this._keys.action = true;
 				break;
 			case 89: // y
 				this._keys.freeCamera = true;
@@ -112,7 +113,7 @@ class ButtonPressedController {
 				this._keys.ctrl = false;
 				break;
 			case 82: // r
-				this._keys.action = false;
+				this._keys.read = false;
 				break;
 			case 16: // SHIFT
 				this._keys.shift = false;
@@ -121,7 +122,7 @@ class ButtonPressedController {
 				this._keys.thirdPersonCamera = false;
 				break;
 			case 70: // f
-				// this._keys.freeCamera = false;
+				this._keys.action = false;
 				break;
 			case 89: // y
 				this._keys.freeCamera = false;

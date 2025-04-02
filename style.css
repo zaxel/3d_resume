@@ -30,7 +30,7 @@
   font-size: 24px;
   text-align: center;
 
-  width: 12vw;
+  width: 10vw;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
@@ -306,11 +306,11 @@ a.chapter-link-show {
   background: #7a5630;
 }
 
-.config button.active {
+.config button.config-active {
   background: #444;
   transition: opacity 0.2s ease-in-out;
 }
-.config button.active:hover {
+.config button.config-active:hover {
   opacity: 0.8;
 }
 

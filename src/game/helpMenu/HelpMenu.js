@@ -48,7 +48,7 @@ export class HelpMenu {
               </dl>
               <dl class="c-main__kbd rand-action-kbd">
                 <dt>
-                  <kbd>r</kbd>
+                  <kbd>f</kbd>
                 </dt>
                 <dd>- random action</dd>
               </dl>
@@ -82,7 +82,7 @@ export class HelpMenu {
               </dl>
               <dl class="c-main__kbd chapter-kbd">
                 <dt>
-                  <kbd>space</kbd>
+                  <kbd>r</kbd>
                 </dt>
                 <dd>- open/close chapter</dd>
               </dl>

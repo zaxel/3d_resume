@@ -19,21 +19,21 @@ export class ModalChapter {
   updateChapterModalStatus() {
     const keys = this.markersDistanceHandler.character.basicController._input._keys;
 
-    if (this.markersDistanceHandler.activeMarker && !this.activeModalChapter && keys.space) {
+    if (this.markersDistanceHandler.activeMarker && !this.activeModalChapter && keys.read) {
       this.showChapterModal();
-      keys.space = false;
+      keys.read = false;
     }
 
-    if (this.activeModalChapter && (keys.esc || keys.space)) {
+    if (this.activeModalChapter && (keys.esc || keys.read)) {
       this.hideChapterModal();
       keys.esc = false;
-      keys.space = false;
+      keys.read = false;
     }
   }
   handleKeyPress(event) {
-    if (this.markersDistanceHandler.activeMarker && !this.activeModalChapter && event.code === "Space") {
+    if (this.markersDistanceHandler.activeMarker && !this.activeModalChapter && event.keyCode === 82) {
         this.showChapterModal();
-    }else if (this.activeModalChapter && (event.code === "Escape" || event.code === "Space")) {
+    }else if (this.activeModalChapter && (event.code === "Escape" || event.keyCode === 82)) {
       this.hideChapterModal();
     }
   }

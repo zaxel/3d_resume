@@ -25933,7 +25933,7 @@ void main() {
         minZ: -400
       }, Zc = {
         x: 0,
-        y: -100,
+        y: -80,
         z: 0
       }, $a = {
         x: -40,
@@ -29346,7 +29346,7 @@ void main() {
         }
         updateMarkerModalStatus() {
           this.markersDistanceHandler.activeMarker && this.markersDistanceHandler.activeMarker !== this.activeMarker && (this.activeMarker = this.markersDistanceHandler.activeMarker, this.modal.innerHTML = `
-                press <kbd>space</kbd> to read <strong> ${this.activeMarker.name}</strong>
+                press <kbd>R</kbd> to read <strong> ${this.activeMarker.name}</strong>
             `, this.modal.classList.add("show-marker-modal")), !this.markersDistanceHandler.activeMarker && this.activeMarker && (this.activeMarker = null, this.modal.classList.remove("show-marker-modal"));
         }
       }
@@ -29378,10 +29378,10 @@ void main() {
         }
         updateChapterModalStatus() {
           const e = this.markersDistanceHandler.character.basicController._input._keys;
-          this.markersDistanceHandler.activeMarker && !this.activeModalChapter && e.space && (this.showChapterModal(), e.space = false), this.activeModalChapter && (e.esc || e.space) && (this.hideChapterModal(), e.esc = false, e.space = false);
+          this.markersDistanceHandler.activeMarker && !this.activeModalChapter && e.read && (this.showChapterModal(), e.read = false), this.activeModalChapter && (e.esc || e.read) && (this.hideChapterModal(), e.esc = false, e.read = false);
         }
         handleKeyPress(e) {
-          this.markersDistanceHandler.activeMarker && !this.activeModalChapter && e.code === "Space" ? this.showChapterModal() : this.activeModalChapter && (e.code === "Escape" || e.code === "Space") && this.hideChapterModal();
+          this.markersDistanceHandler.activeMarker && !this.activeModalChapter && e.keyCode === 82 ? this.showChapterModal() : this.activeModalChapter && (e.code === "Escape" || e.keyCode === 82) && this.hideChapterModal();
         }
         showChapterModal() {
           const e = this.markersDistanceHandler.character.basicController._input;
@@ -30789,7 +30789,7 @@ void main() {
               </dl>
               <dl class="c-main__kbd rand-action-kbd">
                 <dt>
-                  <kbd>r</kbd>
+                  <kbd>f</kbd>
                 </dt>
                 <dd>- random action</dd>
               </dl>
@@ -30823,7 +30823,7 @@ void main() {
               </dl>
               <dl class="c-main__kbd chapter-kbd">
                 <dt>
-                  <kbd>space</kbd>
+                  <kbd>r</kbd>
                 </dt>
                 <dd>- open/close chapter</dd>
               </dl>
@@ -33227,6 +33227,7 @@ void main() {
             shift: false,
             esc: false,
             action: false,
+            read: false,
             limitAreaReachedAct: false,
             limitAreaTurn: false,
             limitAreaWalk: false,
@@ -33261,7 +33262,7 @@ void main() {
               this._keys.ctrl = true;
               break;
             case 82:
-              this._keys.action = true;
+              this._keys.read = true;
               break;
             case 16:
               this._keys.shift = true;
@@ -33270,6 +33271,7 @@ void main() {
               this._keys.thirdPersonCamera = true;
               break;
             case 70:
+              this._keys.action = true;
               break;
             case 89:
               this._keys.freeCamera = true;
@@ -33304,7 +33306,7 @@ void main() {
               this._keys.ctrl = false;
               break;
             case 82:
-              this._keys.action = false;
+              this._keys.read = false;
               break;
             case 16:
               this._keys.shift = false;
@@ -33313,6 +33315,7 @@ void main() {
               this._keys.thirdPersonCamera = false;
               break;
             case 70:
+              this._keys.action = false;
               break;
             case 89:
               this._keys.freeCamera = false;
@@ -33641,7 +33644,7 @@ void main() {
           this._startBtn.addEventListener("click", (e) => {
             this._getSettings(), this._config.classList.add("config-hide"), this.Game && new this.Game(this.settings);
           }), this._lowPCBtn.addEventListener("click", (e) => {
-            e.target.classList.toggle("active"), e.target.classList.contains("active") ? this._setCheckBoxes(false) : this._setCheckBoxes(true);
+            e.target.classList.toggle("config-active"), e.target.classList.contains("config-active") ? this._setCheckBoxes(false) : this._setCheckBoxes(true);
           });
         }
         _getSettings() {

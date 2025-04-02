@@ -119,10 +119,7 @@ kbd {
   top: 10px;
   right: 10px;
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
-  /* padding: 10px 20px; */
-  /* background: red; color: white; */
-  /* border: none; cursor: pointer; */
-
+  
   background: #c55900;
   color: #f5e0c7;
   border: none;
@@ -155,10 +152,8 @@ kbd {
   bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
-  /* background: rgba(20, 20, 20, 0.85); */
   padding: 12px;
   border-radius: 12px;
-  /* box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3); */
 }
 
 #pagination button {
@@ -230,13 +225,12 @@ a.chapter-link-show {
 
 /*configuration page start*/
 .config {
-  /* display: none; */
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100dvw;
   height: 100dvh;
-  background: url("./initPage/resume_screen.jpg");
+  background: url("./src/images/initPage/resume_screen.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -285,13 +279,11 @@ a.chapter-link-show {
 .c-main fieldset {
   border-radius: 18px;
   padding: 2dvw;
-  /* margin: 20px; */
 }
 .c-main legend {
   font-weight: 600;
   font-size: 37px;
   padding: 0 18px;
-  /* margin-bottom: -15px; */
 }
 .c-main kbd {
   margin: 0 2px;
@@ -336,8 +328,6 @@ a.chapter-link-show {
 .c-main__features {
   text-align: left;
   margin: -36px 0 8px 0;
-  /* display: flex; */
-  /* flex-direction: column; */
 }
 .c-main__features input[type="checkbox"] {
   display: none;
@@ -389,14 +379,6 @@ a.chapter-link-show {
 .c-main__features input[type="checkbox"]:checked + .c-main__checkmark::before,
 .c-main__features input[type="checkbox"]:checked + .c-main__checkmark::after {
   display: block;
-  /* position: absolute; */
-  /* top: 1px; */
-  /* right: 5px; */
-  /* width: 4px; */
-  /* height: 16px; */
-  /* content: ""; */
-  /* background: #f5e0c7; */
-  /* transform: rotate(33deg); */
 }
 
 .c-main__controls-kbd {
@@ -445,8 +427,6 @@ a.chapter-link-show {
   cursor: pointer;
   border-radius: 6px;
   font-weight: bold;
-  /* opacity: 0; */
-  /* display: none; */
   transition: background 0.2s ease-in-out, opacity 1s, display 1s allow-discrete;
   box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
   margin: 8px;
@@ -464,7 +444,7 @@ a.chapter-link-show {
   justify-content: center;
   width: 100dvw;
   height: 100dvh;
-  background: url("./initPage/resume_screen.jpg");
+  background: url("./src/images/initPage/resume_screen.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -561,10 +541,7 @@ a.chapter-link-show {
   background-color: transparent;
   opacity: 0;
   visibility: hidden;
-  /* display: none; */
   transition: opacity .1s ease-in-out, visibility .1s ease-in-out;
-
-
 }
 .help__container {
   position: absolute;
@@ -586,9 +563,6 @@ a.chapter-link-show {
   backdrop-filter: blur(15px);
   box-shadow: 0 10px 30px;
   padding: 18px;
-
-
-
 }
 .helpModal-show{
   opacity: 1;
@@ -597,7 +571,6 @@ a.chapter-link-show {
 .help__container .c-main__right dd{
   left: 60%;
   }
-
 
 .help__close {
   position: absolute;
@@ -615,6 +588,4 @@ a.chapter-link-show {
   font-weight: bold;
   transition: background 0.2s ease-in-out;
 }
-
-
 /*help menu module end*/

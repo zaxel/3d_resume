@@ -71,7 +71,7 @@ export const loadCompressedModel = (() => {
       if (!gLoader) {
         gLoader = new GLTFLoader(loadingManager);
         ktx2Loader = new KTX2Loader();
-        ktx2Loader.setTranscoderPath("https://unpkg.com/three@0.150.1/examples/jsm/libs/basis/");
+        ktx2Loader.setTranscoderPath("./libs/basis/");
         ktx2Loader.detectSupport(renderer);
 
         gLoader.setKTX2Loader(ktx2Loader);
